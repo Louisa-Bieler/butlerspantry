@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8d41aa-6c75-4852-b71a-76659f04e5da" name="Changes" comment="stopping point: figuring out how to specify default input file name vs. user specified for initialization of pantry">
-      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/connection/ReadFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/implementation/IngredientLogicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/implementation/IngredientValidationLogicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/model/IngredientTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/implementation/FoodInventoryLogic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/java/com/butlerspantry/ReadFileTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ab8d41aa-6c75-4852-b71a-76659f04e5da" name="Changes" comment="added in unit tests except those requiring files bc I have to figure out where the files should go" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -84,8 +71,8 @@
       <recent name="main.java" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="main.java.com.butlerspantry.model" />
       <recent name="main.java.com.butlerspantry.implementation" />
+      <recent name="main.java.com.butlerspantry.model" />
       <recent name="main.java.com.butlerspantry.connection" />
       <recent name="main.java.com.butlerspantry.service" />
       <recent name="java.com.butlerspantry" />
@@ -211,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684389301541</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added in unit tests except those requiring files bc I have to figure out where the files should go">
+      <created>1684437337545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684437337545</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,6 +233,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="stopping point: figuring out how to specify default input file name vs. user specified for initialization of pantry" />
-    <option name="LAST_COMMIT_MESSAGE" value="stopping point: figuring out how to specify default input file name vs. user specified for initialization of pantry" />
+    <MESSAGE value="added in unit tests except those requiring files bc I have to figure out where the files should go" />
+    <option name="LAST_COMMIT_MESSAGE" value="added in unit tests except those requiring files bc I have to figure out where the files should go" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/ReadFile.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/connection/ReadFileTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
