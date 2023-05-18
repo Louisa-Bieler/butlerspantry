@@ -13,7 +13,7 @@ public class UnitConversion {
 
     private static HashMap<String, String[]> unitConversionMapping = new HashMap<>();
 
-    public static void addUnitConversionMapping(String fileName) throws IOException {
+    public static void addUnitConversionMapping(String fileName) throws Exception {
         File conversions = ReadFile.readFile(String.valueOf(fileName));
         try (Scanner scanner = new Scanner(conversions).useDelimiter("\n")) {
             while (scanner.hasNextLine()) {

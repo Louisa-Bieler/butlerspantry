@@ -88,7 +88,8 @@ public class DigitizedFoodInventoryServiceImplementation implements DigitizedFoo
         WriteFile.writeFoodInventory(toSave.toString(), name);
     }
 
-    static void addFoodToFoodInventory(FoodInventory toUpdate, FoodInventory additions) {
+    @Override
+    public void addFoodToFoodInventory(FoodInventory toUpdate, FoodInventory additions) {
         additions.getInventory().forEach(
                 (key, value) ->
                         toUpdate.getInventory().merge(

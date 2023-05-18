@@ -1,11 +1,8 @@
 package main.java.com.butlerspantry.service;
 
-import main.java.com.butlerspantry.implementation.FoodInventoryLogic;
-import main.java.com.butlerspantry.implementation.UnitConversion;
 import main.java.com.butlerspantry.model.FoodInventory;
 
 import java.io.File;
-import java.util.HashMap;
 
 public interface DigitizedFoodInventoryService {
 
@@ -24,8 +21,7 @@ public interface DigitizedFoodInventoryService {
 
     void saveFoodInventoryAsFileUserSpecifiedName(FoodInventory saveToFile, String name);
 
-    static void addFoodToFoodInventory(FoodInventory toUpdate, FoodInventory additions) {
-    }
+     void addFoodToFoodInventory(FoodInventory toUpdate, FoodInventory additions);
 
     FoodInventory produceFoodInventoryFromUserInput(String userInput);
 

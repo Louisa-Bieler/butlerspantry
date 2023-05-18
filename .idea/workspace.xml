@@ -5,29 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8d41aa-6c75-4852-b71a-76659f04e5da" name="Changes" comment="stopping point: figuring out how to specify default input file name vs. user specified for initialization of pantry">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/WriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/controller/DigitizedFoodInventoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/implementation/FoodInventoryLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/implementation/IngredientLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/implementation/IngredientValidationLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/implementation/UnitConversion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/logging/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/model/FoodInventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/connection/ReadFileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/implementation/IngredientLogicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/implementation/IngredientValidationLogicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/model/IngredientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Application.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/butlerspantry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/butlerspantry.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/ReadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/controller/DigitizedPantryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/model/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/model/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/model/Pantry.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedPantryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedPantryServiceImplementation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/java/com/butlerspantry/ReadFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/java/com/butlerspantry/ReadFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/implementation/FoodInventoryLogic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/java/com/butlerspantry/ReadFileTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -66,23 +55,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_directory_selection": "/Users/louisa.bieler/IdeaProjects/butlerspantry/src/main/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -90,14 +80,120 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main.java" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="main.java.com.butlerspantry.model" />
+      <recent name="main.java.com.butlerspantry.implementation" />
+      <recent name="main.java.com.butlerspantry.connection" />
+      <recent name="main.java.com.butlerspantry.service" />
       <recent name="java.com.butlerspantry" />
-      <recent name="com.butlerspantry.connection" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="main.java.com.butlerspantry.connection" />
       <recent name="main.java.com.butlerspantry.implementation" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.main.java.com.butlerspantry in butlerspantry">
+    <configuration name="IngredientLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="butlerspantry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.butlerspantry.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.com.butlerspantry.implementation" />
+      <option name="MAIN_CLASS_NAME" value="main.java.com.butlerspantry.implementation.IngredientLogicTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="butlerspantry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.butlerspantry.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.com.butlerspantry.model" />
+      <option name="MAIN_CLASS_NAME" value="main.java.com.butlerspantry.model.IngredientTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IngredientValidationLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="butlerspantry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.butlerpantry.implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.butlerpantry.implementation" />
+      <option name="MAIN_CLASS_NAME" value="com.butlerpantry.implementation.IngredientValidationLogicTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadFileTest.readFileThrowsExceptionIfNoFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="butlerspantry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.butlerspantry.connection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.com.butlerspantry.connection" />
+      <option name="MAIN_CLASS_NAME" value="main.java.com.butlerspantry.connection.ReadFileTest" />
+      <option name="METHOD_NAME" value="readFileThrowsExceptionIfNoFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.java.com.butlerspantry in butlerspantry" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="butlerspantry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.butlerspantry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.com.butlerspantry" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.java.com.butlerspantry.connection in butlerspantry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="butlerspantry" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.butlerspantry.connection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="main.java.com.butlerspantry.connection" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ReadFileTest.readFileThrowsExceptionIfNoFile" />
+        <item itemvalue="JUnit.main.java.com.butlerspantry.connection in butlerspantry" />
+        <item itemvalue="JUnit.IngredientValidationLogicTest" />
+        <item itemvalue="JUnit.IngredientTest" />
+        <item itemvalue="JUnit.IngredientLogicTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,6 +204,14 @@
       <option name="presentableId" value="Default" />
       <updated>1684315367651</updated>
     </task>
+    <task id="LOCAL-00001" summary="stopping point: figuring out how to specify default input file name vs. user specified for initialization of pantry">
+      <created>1684389301541</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684389301541</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,7 +219,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

@@ -12,16 +12,18 @@ public class ReadFile {
     // give good file
     // give bad file
 
-    public static File readFile(String fileName) throws IOException {
+    public static File readFile(String fileName) throws Exception {
         File myFoodInventory = new File(fileName);
-        String logSuccess = "readFile Successful on " + new Date();
-        Logger.logNow(logSuccess);
-        return myFoodInventory;
+        if (myFoodInventory.isFile()) {
+            String logSuccess = "readFile Successful on " + new Date();
+            Logger.logNow(logSuccess);
+            return myFoodInventory;
+        } else {
+            throw new Exception("No such file found. Please check input!");
+        }
     }
 
 }
-
-
 
 
 
