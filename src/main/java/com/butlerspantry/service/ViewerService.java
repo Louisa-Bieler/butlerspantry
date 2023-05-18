@@ -1,4 +1,4 @@
 package main.java.com.butlerspantry.service;
 
-public interface ShoppingListService {
+public interface ViewerService {
 }

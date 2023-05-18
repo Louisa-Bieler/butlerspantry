@@ -1,2 +1,27 @@
-package main.java.com.butlerspantry.connection;public class ReadFile {
+package main.java.com.butlerspantry.connection;
+
+import main.java.com.butlerspantry.logging.Logger;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
+
+public class ReadFile {
+
+    //TODO Test would give file that doesnt exist and see if the corret logs and throws happen
+    // give good file
+    // give bad file
+
+    public static File readFile(String fileName) throws IOException {
+        File myFoodInventory = new File(fileName);
+        String logSuccess = "readFile Successful on " + new Date();
+        Logger.logNow(logSuccess);
+        return myFoodInventory;
+    }
+
 }
+
+
+
+
+
