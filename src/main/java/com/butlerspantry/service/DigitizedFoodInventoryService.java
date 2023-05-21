@@ -9,6 +9,7 @@ public interface DigitizedFoodInventoryService {
     void chooseUnitConversionFile(File unitConversion);
 
     //Recipes and Pantries are both FoodInventory objects
+
     FoodInventory produceFoodInventoryFromFile(File pantryInventory);
 
     boolean doIHaveEnoughFood(FoodInventory available, FoodInventory required);
@@ -21,7 +22,7 @@ public interface DigitizedFoodInventoryService {
 
     void saveFoodInventoryAsFileUserSpecifiedName(FoodInventory saveToFile, String name);
 
-     void addFoodToFoodInventory(FoodInventory toUpdate, FoodInventory additions);
+    void addFoodToFoodInventory(FoodInventory toUpdate, FoodInventory additions);
 
     FoodInventory produceFoodInventoryFromUserInput(String userInput);
 

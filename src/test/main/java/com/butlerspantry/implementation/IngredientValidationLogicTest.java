@@ -1,7 +1,6 @@
 package main.java.com.butlerspantry.implementation;
 
-import main.java.com.butlerspantry.implementation.IngredientLogic;
-import main.java.com.butlerspantry.implementation.IngredientValidationLogic;
+import main.java.com.butlerspantry.service.IngredientValidationLogicService;
 import main.java.com.butlerspantry.logging.Logger;
 import main.java.com.butlerspantry.model.Ingredient;
 import org.junit.jupiter.api.Assertions;
@@ -23,7 +22,7 @@ class IngredientValidationLogicTest {
     @Test
     void ingredientNameValidatorHappyPath() {
         IllegalArgumentException emptyName = assertThrows(IllegalArgumentException.class, () -> {
-            IngredientValidationLogic.ingredientNameValidator(emptyTestString);
+            IngredientValidationLogicService.ingredientNameValidator(emptyTestString);
         });
     }
 
@@ -31,7 +30,7 @@ class IngredientValidationLogicTest {
     void ingredientNameValidatorJustComma() {
         Exception unknownException = assertThrows(Exception.class, () -> {
             Ingredient failure = IngredientLogic.returnIngredient(",");
-            IngredientValidationLogic.ingredientNameValidator(failure.getName());
+            IngredientValidationLogicService.ingredientNameValidator(failure.getName());
         });
         Logger.logNow(unknownException.getMessage() + "\n"  + unknownException.getClass());
     }
@@ -40,7 +39,7 @@ class IngredientValidationLogicTest {
     void ingredientNameValidatorJustNumbers() {
         IllegalArgumentException justNumbers = assertThrows(IllegalArgumentException.class, () -> {
             Ingredient failure = IngredientLogic.returnIngredient("057389,g,1000");
-            IngredientValidationLogic.ingredientNameValidator(failure.getName());
+            IngredientValidationLogicService.ingredientNameValidator(failure.getName());
         });
         Logger.logNow(justNumbers.getMessage() + "\n"  + justNumbers.getClass());
     }
@@ -77,7 +76,7 @@ class IngredientValidationLogicTest {
     void ingredientAmountValidatorNegativeAmount() {
         IllegalArgumentException badAmountException = assertThrows(IllegalArgumentException.class, () -> {
             Ingredient willNotCome = IngredientLogic.returnIngredient("Flour,g,-1000");
-            IngredientValidationLogic.ingredientAmountValidator(willNotCome.getAmount());
+            IngredientValidationLogicService.ingredientAmountValidator(willNotCome.getAmount());
         });
         Logger.logNow(badAmountException.getMessage());
     }
@@ -86,7 +85,7 @@ class IngredientValidationLogicTest {
     void testBadPathNoStringsAndABigDecimal() {
         Exception unknownException = assertThrows(Exception.class, () -> {
             Ingredient failure = IngredientLogic.returnIngredient(",,3");
-            IngredientValidationLogic.ingredientNameValidator(failure.getName());
+            IngredientValidationLogicService.ingredientNameValidator(failure.getName());
         });
 
         Logger.logNow(unknownException.getMessage() + "\n"  + unknownException.getClass());

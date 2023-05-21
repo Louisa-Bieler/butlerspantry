@@ -1,14 +1,15 @@
 package main.java.com.butlerspantry.service;
 
+import main.java.com.butlerspantry.connection.ReadFile;
 import main.java.com.butlerspantry.connection.WriteFile;
 import main.java.com.butlerspantry.implementation.IngredientLogic;
-import main.java.com.butlerspantry.implementation.IngredientValidationLogic;
 import main.java.com.butlerspantry.implementation.UnitConversion;
 import main.java.com.butlerspantry.logging.Logger;
 import main.java.com.butlerspantry.model.FoodInventory;
 import main.java.com.butlerspantry.model.Ingredient;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.time.Instant;
 import java.util.Scanner;
 
@@ -16,26 +17,24 @@ public class DigitizedFoodInventoryServiceImplementation implements DigitizedFoo
 
 
     @Override
-    public void chooseUnitConversionFile(File unitConversion) {
-
+    public void chooseUnitConversionFile(File unitConversion) throws Exception {
+        UnitConversion.addUnitConversionMapping("src/main/resources/unitConversions.csv");
     }
 
     @Override
     public FoodInventory produceFoodInventoryFromFile(File pantryInventory) {
-            FoodInventory newFoodInventory = new FoodInventory();
-            try (Scanner scanner = new Scanner(pantryInventory).useDelimiter(",")) {
-                while (scanner.hasNextLine()) {
-                    Ingredient iterIngredient = IngredientLogic.returnIngredient(scanner.nextLine());
-                    IngredientValidationLogic.ingredientNameValidator(iterIngredient.getName());
-                    IngredientValidationLogic.ingredientUnitValidator(iterIngredient.getUnit());
-                    IngredientValidationLogic.ingredientAmountValidator(iterIngredient.getAmount());
-                    newFoodInventory.setIngredientFromIngredient(iterIngredient);
-                }
-                return newFoodInventory;
-            } catch (Exception e) {
-                Logger.logLater(e.getMessage());
-                return new FoodInventory();
+        FoodInventory newFoodInventory = new FoodInventory();
+        try {
+            Scanner scanner = new Scanner(pantryInventory).useDelimiter(",");
+            while (scanner.hasNextLine()) {
+                Ingredient iterIngredient = IngredientLogic.returnIngredient(scanner.nextLine());
+                newFoodInventory.setIngredientFromIngredient(iterIngredient);
             }
+            return newFoodInventory;
+        } catch (FileNotFoundException scanner) {
+            Logger.logLater(scanner.getMessage());
+            return newFoodInventory;
+        }
     }
 
     @Override
@@ -91,12 +90,12 @@ public class DigitizedFoodInventoryServiceImplementation implements DigitizedFoo
     @Override
     public void addFoodToFoodInventory(FoodInventory toUpdate, FoodInventory additions) {
         additions.getInventory().forEach(
-                (key, value) ->
+                (key, ingredient) ->
                         toUpdate.getInventory().merge(
-                                key, value, (value1, value2) ->
+                                key, ingredient, (ingredientToUpdate, additionalIngredient) ->
                                 {
-                                    value1.addAmountFromShopping(value2.getAmount());
-                                    return value1;
+                                    ingredientToUpdate.addAmountFromShopping(additionalIngredient.getAmount());
+                                    return ingredientToUpdate;
                                 }
                         )
         );

@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab8d41aa-6c75-4852-b71a-76659f04e5da" name="Changes" comment="added in unit tests except those requiring files bc I have to figure out where the files should go" />
+    <list default="true" id="ab8d41aa-6c75-4852-b71a-76659f04e5da" name="Changes" comment="tests to test">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/myPantry.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/unitConversions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/butlerspantry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/butlerspantry.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/controller/DigitizedFoodInventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/controller/DigitizedFoodInventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/implementation/IngredientValidationLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/IngredientValidationLogicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/main/java/com/butlerspantry/implementation/IngredientValidationLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/main/java/com/butlerspantry/implementation/IngredientValidationLogicTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,11 +31,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -55,12 +73,16 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "last_directory_selection": "/Users/louisa.bieler/IdeaProjects/butlerspantry/src/main/java",
+    "last_opened_file_path": "/Users/louisa.bieler/IdeaProjects/butlerspantry/src/main/resources",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -68,6 +90,7 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main.java.com.butlerspantry.service" />
       <recent name="main.java" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -87,7 +110,7 @@
       <module name="butlerspantry" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.com.butlerspantry.implementation.*" />
+          <option name="PATTERN" value="main.java.com.butlerspantry.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684437337545</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tests to test">
+      <created>1684437717498</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684437717498</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,18 +264,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="stopping point: figuring out how to specify default input file name vs. user specified for initialization of pantry" />
     <MESSAGE value="added in unit tests except those requiring files bc I have to figure out where the files should go" />
-    <option name="LAST_COMMIT_MESSAGE" value="added in unit tests except those requiring files bc I have to figure out where the files should go" />
+    <MESSAGE value="tests to test" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests to test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/ReadFile.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/main/java/com/butlerspantry/connection/ReadFileTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/main/java/com/butlerspantry/connection/ReadFileTest.java</url>
           <line>12</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
