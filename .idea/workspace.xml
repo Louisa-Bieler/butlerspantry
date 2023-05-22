@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ab8d41aa-6c75-4852-b71a-76659f04e5da" name="Changes" comment="have a viewer interface and matching implementation and am developing a corresponding controller">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/model/RecipeBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerServiceImplemented.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/main/java/com/butlerspantry/service/ViewerServiceImplementationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/controller/DigitizedFoodInventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/controller/DigitizedFoodInventoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/model/FoodInventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/model/FoodInventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/DigitizedFoodInventoryServiceImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/IngredientValidationLogicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/IngredientValidationLogicService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/service/ViewerServiceImplementation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/butlerspantry/connection/ReadFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684691278361</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="have a viewer interface and matching implementation and am developing a corresponding controller">
+      <created>1684765306158</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684765306158</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
