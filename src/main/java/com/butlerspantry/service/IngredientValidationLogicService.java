@@ -26,12 +26,25 @@ public class IngredientValidationLogicService {
             Logger.logLater(scanner.getMessage());
             return false;
         } catch (IllegalArgumentException any){
-            Logger.logLater(any.getMessage();
+            Logger.logLater(any.getMessage());
             return false;
         }
     }
 
-    private void ingredientNameValidator(String name) throws IllegalArgumentException {
+    public static boolean validateString(String toTest) {
+        try {
+            Ingredient ingredientToTest = IngredientLogic.returnIngredient(toTest);
+            ingredientNameValidator(ingredientToTest.getName());
+            ingredientAmountValidator(ingredientToTest.getAmount());
+            ingredientUnitValidator(ingredientToTest.getUnit());
+            return true; }
+        catch (IllegalArgumentException any) {
+            Logger.logLater(any.getMessage());
+            return false;
+        }
+    }
+
+    public static void ingredientNameValidator(String name) throws IllegalArgumentException {
         if (name.isEmpty()){
             throw new IllegalArgumentException("Ingredient name is blank. Check input!");
         } else if (name.equals(null)){
@@ -44,13 +57,13 @@ public class IngredientValidationLogicService {
         }
     }
 
-    private void ingredientUnitValidator(String unit) throws IllegalArgumentException {
+    public static void ingredientUnitValidator(String unit) throws IllegalArgumentException {
         if (unit.isEmpty()){
             throw new IllegalArgumentException("Ingredient unit is blank. Check input!");
         }
     }
 
-    private void ingredientAmountValidator(BigDecimal amount) throws IllegalArgumentException {
+    public static void ingredientAmountValidator(BigDecimal amount) throws IllegalArgumentException {
         if (amount.compareTo(BigDecimal.valueOf(0))<0) {
             throw new IllegalArgumentException("Input amount cannot be a negative number");
         }

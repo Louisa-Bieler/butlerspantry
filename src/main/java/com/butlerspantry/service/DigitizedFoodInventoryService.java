@@ -6,7 +6,7 @@ import java.io.File;
 
 public interface DigitizedFoodInventoryService {
 
-    void chooseUnitConversionFile(File unitConversion);
+    void chooseUnitConversionFile(File unitConversion) throws Exception;
 
     //Recipes and Pantries are both FoodInventory objects
 

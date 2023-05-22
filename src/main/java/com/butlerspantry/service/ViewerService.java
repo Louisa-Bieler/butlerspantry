@@ -1,5 +1,9 @@
 package main.java.com.butlerspantry.service;
 
+import main.java.com.butlerspantry.model.FoodInventory;
+import main.java.com.butlerspantry.model.RecipeBook;
+import org.junit.jupiter.api.function.Executable;
+
 import java.io.File;
 
 public interface ViewerService {
@@ -24,22 +28,34 @@ offer user options:
 
  */
 
-    public File chooseStarterFile() throws Exception;
-
-    public void loadFileConfirmation(String fileName);
 
 
     public int viewOptions();
+    //TODO Make Menu with all further methods
 
-    public void viewCurrentPantry();
+    public String inputFile();
+    //TODO Take user input as a string and give it to the controller to make into a File and validate, and then load into the current FoodInventory
+    //TODO Tell the User that you are working on it
 
-    public void viewCurrentRecipes();
+    public String inputRecipeFile();
+    //TODO same as above but load into the recipe book instead
+    //let them hit a specific key to go back to the main menu
 
-    public void checkRecipe();
+    public void viewCurrentPantry(FoodInventory currentPantry);
 
-    public void persistShoppingList();
+    public int viewCurrentRecipes(RecipeBook current);
+    //TODO view list of recipe names with a number next to each one
+    //take user input to allow user to check the pantry for the ingredients to this recipe or go back to the main menu;
 
-    public void addShoppingList();
+    void loadFileWithConfirmation(boolean resultOfValidations, String anyErrorMessages);
+
+    public void viewCurrentShoppingList(FoodInventory shoppingList);
+
+    public int checkRecipe(FoodInventory shoppingList);
+    //display results of checking a recipe
+
+
+
 
 
 

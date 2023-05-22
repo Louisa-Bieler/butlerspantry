@@ -10,6 +10,16 @@ import java.util.Iterator;
 public class FoodInventory {
     private HashMap<String, Ingredient> inventory;
 
+    public String getNameIfRecipe() {
+        return nameIfRecipe;
+    }
+
+    public void setNameIfRecipe(String nameIfRecipe) {
+        this.nameIfRecipe = nameIfRecipe;
+    }
+
+    private String nameIfRecipe;
+
     public FoodInventory() {
         this.inventory = new HashMap<String, Ingredient>();
     }
