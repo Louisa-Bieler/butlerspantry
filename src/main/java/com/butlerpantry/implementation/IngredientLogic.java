@@ -1,5 +1,7 @@
 package com.butlerpantry.implementation;
 
+import com.butlerpantry.model.Ingredient;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 

@@ -1,13 +1,14 @@
 package com.butlerpantry.implementation;
 
 import com.butlerpantry.logging.Logger;
+import com.butlerpantry.model.Pantry;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 
-import static com.butlerpantry.implementation.ReadFile.readFile;
+import static com.butlerpantry.data.ReadFile.readFile;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class PantryLogicTest {

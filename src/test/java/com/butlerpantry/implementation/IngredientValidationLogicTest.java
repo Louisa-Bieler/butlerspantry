@@ -1,6 +1,7 @@
 package com.butlerpantry.implementation;
 
 import com.butlerpantry.logging.Logger;
+import com.butlerpantry.model.Ingredient;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

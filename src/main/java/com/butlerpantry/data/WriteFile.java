@@ -1,6 +1,7 @@
-package com.butlerpantry.implementation;
+package com.butlerpantry.data;
 
 import com.butlerpantry.logging.Logger;
+import com.butlerpantry.model.Pantry;
 
 import java.io.File;
 import java.io.FileWriter;

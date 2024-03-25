@@ -1,5 +1,7 @@
-package com.butlerpantry.implementation;
+package com.butlerpantry.model;
 
+
+import com.butlerpantry.model.Ingredient;
 
 import java.lang.String;
 import java.util.HashMap;

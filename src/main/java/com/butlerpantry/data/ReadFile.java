@@ -1,4 +1,4 @@
-package com.butlerpantry.implementation;
+package com.butlerpantry.data;
 
 import com.butlerpantry.logging.Logger;
 
@@ -12,7 +12,7 @@ public class ReadFile {
     // give good file
     // give bad file
 
-    public static File readFile(String fileName) throws IOException {
+    public static File readFile(String fileName) {
             File myPantry = new File(fileName);
             String logSuccess = "readFile Successful on " + new Date();
             Logger.logNow(logSuccess);

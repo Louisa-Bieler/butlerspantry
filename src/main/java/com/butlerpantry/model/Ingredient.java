@@ -1,9 +1,9 @@
-package com.butlerpantry.implementation;
+package com.butlerpantry.model;
 
-import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.math.BigDecimal;
 
-public class Ingredient {
+public class Ingredient implements com.butlerpantry.interfaces.Ingredient {
     private String name;
     private String unit;
     private BigDecimal amount;
